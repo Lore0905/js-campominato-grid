@@ -1,32 +1,26 @@
 
 // PASSO 1
-// crare un arrey di numeri non ripetutti generati automaticamente.
+// crare un arrey di numeri consecutivi.
 
-// numeri che devono essere generati
-let numberOfSquare = 49;
-let generatedNumerbersNotRepeted = generateNumbersSquare(numberOfSquare);
-console.log(generatedNumerbersNotRepeted);
+const numberOfSquare = 49;
+let prova = consecutiveNumbersSquare(numberOfSquare);
+console.log(prova);
 
 // creo la funzione che mi permette di creare una quantità di numeri stabilita dalla let numberOfSquare che non sono ripetuti
-function generateNumbersSquare (quantityGenerateNumbers){
-    const numbersArrey = [];
+function consecutiveNumbersSquare (quantityOfNumbers) {
+    const totalnumbersArrey = [];
 
-    while(numbersArrey.lenght < quantityGenerateNumbers){
-        // genero un numero random
-        const randomNumber = getRndInteger(quantityGenerateNumbers);
+    while(totalnumbersArrey.lenght < quantityOfNumbers) {
+        // genero un numero consecutivo
+        
+        let consecutivNumber = 0;
+        consecutivNumber++;
 
-        // devo creare un if per verificare se il numero generato dalla funzione "getRndInteger" è già presente nell'array
-        if(numbersArrey.includes(randomNumber) === false){
-            numbersArrey.push(randomNumber);
-        }
+        totalnumbersArrey.push(consecutivNumber);
+        
     } 
-    return numbersArrey;  
+    return totalnumbersArrey;
 }
-
-// funzione di w3 scool che mi permette di generare numeri
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
 
 
 
