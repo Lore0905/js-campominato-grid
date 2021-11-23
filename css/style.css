@@ -39,10 +39,43 @@ select{
 
 /* MAIN */
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: calc(100vh - 140px);
     background-color: #7fffd4;
 }
+/* grid */
+.game-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 500px;
+    height: 500px;
+    /* test */
+    background-color: lightskyblue;
+}
+
+/* SQUARE */
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
+}
+.square.d-medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.square.d-difficult{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+
 /* END MAIN */
 
 /* FOOTER */
