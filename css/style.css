@@ -5,13 +5,49 @@
 }
 
 /* COMMONS */
+.app-wrapper{
+    width: 100%;
+    height: 100vh;
+}
 /* END COMMONS */
 
 /* HEADER */
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo > img{
+    height: 60px;
+}
+.title{
+    flex-grow: 1;
+}
+select{
+    width: 150px;
+    background-color: #e9e9ed;
+}
+.button{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+#play{
+    padding: 0px 30px;
+}
 /* END HEADER */
 
 /* MAIN */
+main{
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: #7fffd4;
+}
 /* END MAIN */
 
 /* FOOTER */
+footer{
+    width: 100%;
+    height: 70px;
+}
 /* END FOOTER */
