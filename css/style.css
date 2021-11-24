@@ -62,11 +62,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% / 7);
-    height: calc(100% / 7);
     border: 1px solid black;
     background-color: #7fffd4;
     color:white;
+}
+.square.d-easy{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
 .square.d-medium{
     width: calc(100% / 9);
