@@ -30,7 +30,7 @@ function startGame(){
     
     // creo la variabile che mi dice quanti 'square' ci devono essre in base alla difficoltà
     let totalSquareNumber = 49;
-    let customClass = 'd-easy';
+    let customClass = 'd-difficult';
 
     // creo la tabella in base al valore della select
     if( selectValue === 'd-2' ) {
@@ -38,7 +38,7 @@ function startGame(){
         totalSquareNumber = 81;
     } 
     else if( selectValue === 'd-3' ) {
-        customClass = 'd-difficult';
+        customClass = 'd-easy';
         totalSquareNumber = 100;
     }
     console.log(selectValue);
