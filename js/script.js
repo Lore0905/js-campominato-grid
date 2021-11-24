@@ -20,6 +20,7 @@ function startGame(){
     // aggiungo la griglia al click di play-button
     const maingrid = document.getElementById('grid');
     maingrid.classList.remove('hidden');
+    maingrid.innerHTML = '';
 
     // memorizzo i dati nella select 
     const selectValue = document.getElementById('select-level').value;
@@ -44,10 +45,14 @@ function startGame(){
     // creo le celle in base alla difficoltà sceltà dall'utente
     for( let i = 1; i <= totalSquareNumber; i++){
         totalSquare = createSquare(i);
-        
-        
+        totalSquare.addEventListener('click', squareClick);
+        maingrid.appendChild(totalSquare) ;
     }
 
+}
+function squareClick (){
+    // quando clicco su quel tasto deve aggiungersi la classe click (che imposta il backgrouns blue)
+    this.classList.add('click');
 }
 
 // creo la funzione che mi permette di creare le celle in base alla difficoltà
