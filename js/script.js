@@ -25,18 +25,43 @@ function startGame(){
     const selectValue = document.getElementById('select-level').value;
 
     // seleziono la classe 'square' che mi ridimensiona le righe e colonne in base alla difficoltà scelta dll'utente
-    const selectSquare = document.getElementsByClassName("square");
-    console.log(selectSquare);
+    const selectSquare = document.querySelector(".square");
+    
+    // creo la variabile che mi dice quanti 'square' ci devono essre in base alla difficoltà
+    let totalSquareNumber = 49;
 
     // creo la tabella in base al valore della select
     if( selectValue === 'd-2' ) {
         selectSquare.classList.add("d-medium");
+        totalSquareNumber = 81;
     } 
     else if( selectValue === 'd-3' ) {
         selectSquare.classList.add("d-difficult");
+        totalSquareNumber = 100;
     }
     console.log(selectValue);
+
+    // creo le celle in base alla difficoltà sceltà dall'utente
+    for( let i = 1; i <= totalSquareNumber; i++){
+        totalSquare = createSquare(i);
+        
+        
+    }
+
 }
+
+// creo la funzione che mi permette di creare le celle in base alla difficoltà
+function createSquare (singleNumber){
+
+    const newBox = document.createElement('div');
+
+    newBox.classList.add('square');
+    newBox.innerHTML = `<span>${singleNumber}</span>`;
+
+    return newBox;
+}
+
+
 
 
 
