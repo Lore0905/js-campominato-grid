@@ -23,12 +23,12 @@
             </div>
             <!-- select -->
             <div>
-                difficoltà: 
+                <label for="select-level">difficoltà:</label>  
             </div>
-            <select name="difficolta" id="select-difficult">
+            <select name="difficolta" id="select-level">
                 <option value="d-1">Easy</option>
-                <option value="d-1">Medium</option>
-                <option value="d-1">Difficult</option>
+                <option value="d-2">Medium</option>
+                <option value="d-3">Difficult</option>
             </select>
             <!-- button difficoltà -->
             <div class="button">
@@ -41,13 +41,17 @@
 
         <!-- MAIN -->
         <main>
+            <!-- title main -->
+            <div>
+                <h2 id="text-main">Seleziona il livello di difficoltà della griglia</h2>
+            </div>
+            <!-- end title main -->
+            <div id="grid" class="game-grid hidden">
 
-            <div id="grid" class="game-grid">
-
-                <!-- single square
+                <!-- single square -->
                 <div class="square">
                     <span>1</span>
-                </div> -->
+                </div>
                
             </div>
         </main>
