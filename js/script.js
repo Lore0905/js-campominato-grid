@@ -37,7 +37,7 @@ function startGame(){
         customClass = 'd-medium';
         totalSquareNumber = 81;
     } 
-    else if( selectValue === 'd-3' ) {
+    else if( selectValue === 'd-1' ) {
         customClass = 'd-easy';
         totalSquareNumber = 100;
     }
